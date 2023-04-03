@@ -30,7 +30,8 @@ const Auth = () => {
     const { username, password, phoneNumber, avatarURL } = form;
 
     // const URL = "http://localhost:5000/auth";
-    const URL = "https://medico-helper.onrender.com/";
+    // const URL = 'https://chatbes.herokuapp.com/auth';
+    const URL = "https://medico-helper.onrender.com/auth";
 
     const {
       data: { token, userId, hashedPassword, fullName },
