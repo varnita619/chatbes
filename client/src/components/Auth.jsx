@@ -29,8 +29,8 @@ const Auth = () => {
 
     const { username, password, phoneNumber, avatarURL } = form;
 
-    const URL = "http://localhost:5000/auth";
-    // const URL = 'https://chatbes.herokuapp.com/auth';
+    // const URL = "http://localhost:5000/auth";
+    const URL = "https://medico-helper.onrender.com/";
 
     const {
       data: { token, userId, hashedPassword, fullName },
@@ -149,8 +149,11 @@ const Auth = () => {
         </div>
       </div>
       <div className="auth__form-container_image">
-        {isSignup ?  <img src={signinImage} alt="sign in" /> :  <img src={signupImage} alt="sign up" /> }
-       
+        {isSignup ? (
+          <img src={signinImage} alt="sign in" />
+        ) : (
+          <img src={signupImage} alt="sign up" />
+        )}
       </div>
     </div>
   );
